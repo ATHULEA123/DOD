@@ -67,7 +67,7 @@ export default function Footer() {
 </p>                  </div>
                   <div>
                     <p className="flex items-center gap-4 md:text-lg text-sm font-medium"><a href=""><span className="md:text-2xl text-lg"><IoCallOutline /></span></a>
-                      8129334549 | 8606513875</p>
+                      8129334549 | 8606513874</p>
                   </div>
                 </div>
               </div>
