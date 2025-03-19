@@ -8,7 +8,7 @@ import project4 from "../../public/Image/project4.png"
 import design1 from "../../public/Image/design1.png"
 import design2 from "../../public/Image/design2.png"
 import design3 from "../../public/Image/design3.png"
-import design4 from "../../public/Image/deisign4.png"
+import design4 from "../../public/Image/design4.png"
 
 import img1 from "../../public/Image/img1.jpg"
 import img2 from "../../public/Image/img2.jpg"
@@ -157,7 +157,7 @@ export default function Home() {
               </div>
               <div className=" grid md:grid-cols-2 grid-cols-1 gap-8">
                 <div className="">
-                  <Image src={project1} width={590} height={396} alt="" className="object-cover w-dvw"></Image>
+                  <Image src={project1} width={590} height={396} alt="" className="object-cover "></Image>
                   <div className="flex  md:gap-20 gap-10 items-start md:mt-5 mt-2">
                     <div> <p className="font-semibold md:text-2xl text-md">INTERIOR DESIGN AT TRIVANDRUM </p>
                       <p className="font-normal text-sm text-[#777]">Colonial wih contemporary</p></div>
@@ -167,7 +167,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="">
-                  <Image src={project2} width={590} height={396} alt="" className="object-cover w-dvw"></Image>
+                  <Image src={project2} width={590} height={396} alt="" className="object-cover "></Image>
                   <div className="flex  md:gap-20 gap-10 items-start md:mt-5 mt-2">
                     <div> <p className="font-semibold md:text-2xl text-md">INTERIOR DESIGN AT TRIVANDRUM </p>
                       <p className="font-normal text-sm text-[#777]">Colonial wih contemporary</p></div>
@@ -177,7 +177,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="">
-                  <Image src={project3} width={590} height={396} alt="" className="object-cover w-dvw"></Image>
+                  <Image src={project3} width={590} height={396} alt="" className="object-cover "></Image>
                   <div className="flex  md:gap-20 gap-10 items-start md:mt-5 mt-2">
                     <div> <p className="font-semibold md:text-2xl text-md">INTERIOR DESIGN AT TRIVANDRUM </p>
                       <p className="font-normal text-sm text-[#777]">Colonial wih contemporary</p></div>
@@ -187,7 +187,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="">
-                  <Image src={project4} width={590} height={396} alt="" className="object-cover w-dvw"></Image>
+                  <Image src={project4} width={590} height={396} alt="" className="object-cover "></Image>
                   <div className="flex  md:gap-20 gap-10 items-start md:mt-5 mt-2">
                     <div> <p className="font-semibold md:text-2xl text-md">INTERIOR DESIGN AT TRIVANDRUM </p>
                       <p className="font-normal text-sm text-[#777]">Colonial wih contemporary</p></div>
