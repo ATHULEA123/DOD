@@ -1,6 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 import Image from "next/image";
- import logo from "../../public/Image/logo.png";
+
 import { FaFacebookF, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
@@ -23,7 +23,7 @@ export default function Footer() {
                  {`REDEFINE YOUR SPACE?`}
                 </h1>
                 <p className="text-[#454A3F] md:text-lg text-sm font-medium">
-                  {`Lets Create Something Extraordinary Together!`}
+                Let&apos;s Create Something Extraordinary Together!
                 </p>
                 <div>
                   <button className="flex items-center gap-2 bg-[#335555] text-white md:px-5 px-3 py-2 rounded-full text-[10px] md:text-lg">
@@ -34,7 +34,7 @@ export default function Footer() {
               <div className="grid md:grid-cols-3 grid-cols-1 lg:place-items-center items-center  gap-15">
                 <div className=" flex flex-col md:gap-12 gap-6">
                   
-                <Image src={logo} alt="Logo" width={120} height={50} />
+                <Image src='/Image/logo.png' alt="Logo" width={120} height={50} />
 
                   <p className="text-[#070B00] md:text-lg text-sm font-normal ">Experince Bespoke Architectural Design Crafted to Reflect Your Vision And Lifestyle</p>
                   <div className="flex gap-5">
