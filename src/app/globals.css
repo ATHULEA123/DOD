@@ -1,0 +1,65 @@
+ @import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */ 
+:root {
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+body {
+  font-family: var(--font-space-grotesk);
+}
+* {
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 20px;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .lamp {
+   
+    left: 50%
+  }
+  .servicesection{
+    display: flex;
+   flex-direction: column;
+  }
+  .serviceImg{
+    width: 100%;
+  }
+  .serviceRight{
+    width:100%;
+    height:100vh;
+  }
+  .serviceBg{
+    width: 100%;
+    
+  }
+ 
+} 
