@@ -22,6 +22,7 @@ import doorofdream from "../../public/Image/Door of dream.png";
 // import team from "../../public/Image/team.png"
 
 export default function Home() {
+  
   return (
     <>
 
