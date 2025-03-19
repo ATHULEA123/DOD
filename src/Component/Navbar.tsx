@@ -63,14 +63,14 @@ export default function Navbar() {
       {/* Overlay and Sidebar (Fixed without Absolute/Relative) */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-end z-40"
+          className="fixed inset-0 bg-black-200 bg-opacity-70 flex justify-end z-40"
           onClick={() => setIsOpen(false)}
         >
           {/* Sidebar Menu */}
           <div
-            className="w-[250px] h-full bg-white shadow-lg p-6 flex flex-col transform transition-transform duration-300"
-            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the menu
-          >
+  className="w-[250px] h-full bg-white shadow-lg p-6 flex flex-col items-center transform transition-transform duration-300"
+  onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the menu
+>
             {/* Close Button */}
             <button
               onClick={() => setIsOpen(false)}
@@ -93,7 +93,7 @@ export default function Navbar() {
               <Link href="/about" className="text-gray-700 hover:text-blue-600 text-[15px] font-medium" onClick={() => setIsOpen(false)}>
                 About Us
               </Link>
-              <Link href="/contact" className="bg-[#335555] text-white px-6 py-2 rounded-[15px] text-[15px] font-medium hover:bg-[#2a4a4a] transition text-center" onClick={() => setIsOpen(false)}>
+              <Link href="/contact" className="bg-[#335555] text-white px-6 py-2 rounded-[15px] text-[15px] font-medium hover:bg-[#2a4a4a] transition text-center items-center" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </nav>
