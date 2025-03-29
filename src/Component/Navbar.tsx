@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import logo from "../../public/Image/logo.png";
-import icon from "../../public/Image/Whatsappicon.png";
+
 import { MdArrowOutward } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
       {/* Overlay and Sidebar (Fixed without Absolute/Relative) */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-end z-40"
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-end z-40"
           onClick={() => setIsOpen(false)}
         >
           {/* Sidebar Menu */}

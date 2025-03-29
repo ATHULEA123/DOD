@@ -12,7 +12,7 @@ export default function Approach(){
                     }}
                 >
 
-                    <div className=" container">
+                    <div className="container">
                         <div className=" py-15 px-4">
                             <div className="mb-10">
                                 <h1 className="lg:text-5xl md:text-3xl text-xl text-[#fff] font-bold">OUR APPROACH </h1>
