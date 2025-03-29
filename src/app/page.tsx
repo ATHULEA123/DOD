@@ -26,23 +26,7 @@ import AboutUS from "@/Component/AboutUs";
 // import team from "../../public/Image/team.png"
 
 export default function Home() {
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [hovering, setHovering] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-
-    const updateCursor = (e: MouseEvent) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", updateCursor);
-    return () => window.removeEventListener("mousemove", updateCursor);
-  }, []);
 
   
   useEffect(() => {
