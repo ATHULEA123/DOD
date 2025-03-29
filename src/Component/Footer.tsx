@@ -1,9 +1,9 @@
 import { MdArrowOutward } from "react-icons/md";
 import Image from "next/image";
-
 import { FaFacebookF, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
+import logo from "../../public/Image/logo.png";
 export default function Footer() {
   return (
     <>
@@ -20,10 +20,10 @@ export default function Footer() {
               <div className="bg-[#D4DAD0] flex flex-col gap-3 rounded-3xl p-6 shadow-lg max-w-2xl w-full rounded-br-[120px] md:mb-20 mb-10">
                 <p className="md:text-3xl text-lg text-[#335555] font-normal ">Looking To</p>
                 <h1 className="md:text-5xl text-xl font-bold text-[#335555]">
-                 {`REDEFINE YOUR SPACE?`}
+                  REDEFINE YOUR SPACE?
                 </h1>
                 <p className="text-[#454A3F] md:text-lg text-sm font-medium">
-                Let&apos;s Create Something Extraordinary Together!
+                  Let's Create Something Extraordinary Together!
                 </p>
                 <div>
                   <button className="flex items-center gap-2 bg-[#335555] text-white md:px-5 px-3 py-2 rounded-full text-[10px] md:text-lg">
@@ -31,11 +31,9 @@ export default function Footer() {
                   </button>
                 </div>
               </div>
-              <div className="grid md:grid-cols-3 grid-cols-1 lg:place-items-center items-center  gap-15">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:place-items-center items-center  gap-15">
                 <div className=" flex flex-col md:gap-12 gap-6">
-                  
-                <Image src='/Image/logo.png' alt="Logo" width={120} height={50} />
-
+                <Image src={logo} alt="Logo" width={120} height={50} className=" transform transition-transform duration-300 hover:scale-105 "/>
                   <p className="text-[#070B00] md:text-lg text-sm font-normal ">Experince Bespoke Architectural Design Crafted to Reflect Your Vision And Lifestyle</p>
                   <div className="flex gap-5">
                     <a href=""> <FaFacebookF className="md:text-2xl text-lg " /></a>
@@ -59,15 +57,11 @@ export default function Footer() {
                       Kerala,680004</p>
                   </div>
                   <div>
-                  <p className="flex items-center gap-2 md:gap-4 text-sm md:text-lg font-medium max-w-full md:max-w-2xl flex-wrap break-words">
-  <a href="mailto:doorofdreamarchitects22@gmail.com">
-    <span className="text-lg md:text-2xl"><AiOutlineMail /></span>
-  </a>
-  <span className="truncate md:whitespace-normal">doorofdreamarchitects22@gmail.com</span>
-</p>                  </div>
+                    <p className="flex items-center gap-4 md:text-lg text-sm font-medium"><a href=""><span className="lg:text-2xl text-lg"><AiOutlineMail /></span></a>doorofdreamarchitects22@gmail.com</p>
+                  </div>
                   <div>
                     <p className="flex items-center gap-4 md:text-lg text-sm font-medium"><a href=""><span className="md:text-2xl text-lg"><IoCallOutline /></span></a>
-                      8129334549 | 8606513874</p>
+                      8129334549 | 8606513875</p>
                   </div>
                 </div>
               </div>

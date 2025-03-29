@@ -1,10 +1,8 @@
-import { Space_Grotesk } from "next/font/google";
-import type { Metadata } from "next";
+import {Space_Grotesk} from "next/font/google";
+import type {Metadata} from "next";
 import "./globals.css";
-import Footer from "@/Component/Footer";
-import Navbar from "@/Component/Navbar";
-import Hero from "@/Component/HeroPage";
-import Service from "@/Component/Service";
+import FluidCursor from "./Hooks/Fluidcursor";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +11,7 @@ export const metadata: Metadata = {
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-space-grotesk" 
+  variable: "--font-space-grotesk", 
 });
 export default function RootLayout({
   children,
@@ -21,13 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  >
-      <Navbar/>
-      <Hero/>
-      <Service/>
+    <html lang="en">
       <body className={`${spaceGrotesk.variable} antialiased`}>
+      
         {children}</body>
-     <Footer/>
     </html>
   );
 }
