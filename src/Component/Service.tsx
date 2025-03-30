@@ -4,9 +4,15 @@ import icon1 from "../../public/Image/icon1.png";
 import icon2 from "../../public/Image/icon2.png";
 import icon3 from "../../public/Image/icon3.png";
 import { MdArrowOutward } from "react-icons/md";
+
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Service() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  
   return (
     <section className="relative w-full min-h-[600px] flex flex-col items-center px-4 sm:px-8 pb-10">
       {/* Background Image */}

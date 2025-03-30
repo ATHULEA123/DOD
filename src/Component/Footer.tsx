@@ -23,7 +23,8 @@ export default function Footer() {
                   REDEFINE YOUR SPACE?
                 </h1>
                 <p className="text-[#454A3F] md:text-lg text-sm font-medium">
-                  Let's Create Something Extraordinary Together!
+                Let&apos;s Create Something Extraordinary Together!
+
                 </p>
                 <div>
                   <button className="flex items-center gap-2 bg-[#335555] text-white md:px-5 px-3 py-2 rounded-full text-[10px] md:text-lg">
