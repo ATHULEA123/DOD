@@ -68,7 +68,8 @@ body {
  
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10px; /* Optional: Adjust spacing */
+  scroll-padding-top: 10px; 
+  overflow-x: hidden;
 }
 
 :root {
@@ -76,6 +77,7 @@ html {
 }
 body {
   font-family: var(--font-space-grotesk);
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
