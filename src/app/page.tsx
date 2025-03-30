@@ -2,7 +2,7 @@
 import { MdArrowOutward } from "react-icons/md";
 
 
-import { useEffect } from "react";
+import { useEffect ,useRef} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -14,7 +14,8 @@ import design1 from "../../public/Image/design1.png";
 import design2 from "../../public/Image/design2.png";
 import design3 from "../../public/Image/design3.png";
 import design4 from "../../public/Image/deisign4.png";
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import Navbar from "@/Component/Navbar";
@@ -24,7 +25,7 @@ import Footer from "@/Component/Footer";
 import Teams from "@/Component/Teams"
 import AboutUS from "@/Component/AboutUs";
 // import team from "../../public/Image/team.png"
-
+gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
 
 
@@ -36,6 +37,21 @@ export default function Home() {
       easing: "ease-in-out", // Animation easing
     });
   }, []);
+
+    const lampRef = useRef(null);
+    
+      useEffect(() => {
+        gsap.to(lampRef.current, {
+          rotation: 360,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: lampRef.current,
+            start: "top bottom",
+            end: "center center",
+            scrub: 1,
+          },
+        });
+      }, []);
   return (
     <>
       <Navbar />
@@ -65,7 +81,7 @@ export default function Home() {
                     reflects our commitment to design excellence and functionality.
                   </p>
                 </div>
-                <div className="flex gap-3 items-center ">
+                <div className="flex gap-3 items-center " ref={lampRef}>
                   <button
                     className="inline-flex items-center justify-center rounded-full md:w-10 md:h-10 w-7 h-7
                    border-2 border-[#335555] bg-[#335555] text-white

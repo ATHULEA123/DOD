@@ -4,14 +4,36 @@ import icon1 from "../../public/Image/icon1.png";
 import icon2 from "../../public/Image/icon2.png";
 import icon3 from "../../public/Image/icon3.png";
 import { MdArrowOutward } from "react-icons/md";
-
-import { useEffect } from "react";
+import { useEffect,useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AOS from "aos";
 import "aos/dist/aos.css";
+gsap.registerPlugin(ScrollTrigger);
 export default function Service() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 600, 
+      easing: "ease-out", 
+      once: true, 
+      offset: 100, 
+    });
   }, []);
+    const lampRef = useRef(null);
+  
+    useEffect(() => {
+      gsap.to(lampRef.current, {
+        rotation: 360,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: lampRef.current,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
+        },
+      });
+    }, []);
+  
   
   return (
     <section className="relative w-full min-h-[600px] flex flex-col items-center px-4 sm:px-8 pb-10">
@@ -39,7 +61,7 @@ export default function Service() {
         </div>
 
         {/* Right Side Arrow (Hidden on small screens) */}
-        <div className="flex gap-3 items-center mt-6 ">
+        <div className="flex gap-3 items-center mt-6 " ref={lampRef}>
           <button className="inline-flex items-center justify-center rounded-full md:w-10 md:h-10 w-7 h-7
                border-2 border-[#335555] bg-[#335555] text-white
                 outline-2 outline-[#335555] outline-offset-3 p-0"><MdArrowOutward className="md:text-xl text-sm" /></button>
@@ -56,13 +78,13 @@ export default function Service() {
           <div key={index} className="relative w-full sm:w-[300px] md:w-[340px]">
             {/* Border-Only Duplicate Box (Behind Original Box) */}
             <div
-              className="absolute top-2 left-2 w-full h-full border-1 border-[#bdc6b1] rounded-lg z-10"
+              className="absolute top-2 left-2 w-full h-full border-1 border-[#bdc6b1] rounded-lg z-10"data-aos="fade-up"
+     data-aos-anchor-placement="center-center"
               style={{ borderRadius: "25px 25px 80px 25px", backgroundColor: "transparent" }}
             ></div>
 
             {/* Original Service Box */}
-            <div className="relative z-0 bg-[#edf0ea] text-[#335555] flex flex-col py-8 md:py-12 rounded-lg s p-6"data-aos="fade-up"
-     data-aos-anchor-placement="center-center"
+            <div className="relative z-0 bg-[#edf0ea] text-[#335555] flex flex-col py-8 md:py-12 rounded-lg s p-6"
               style={{ borderRadius: "25px 25px 80px 25px" }}>
 
               {/* Icon with Circle Wrapper */}

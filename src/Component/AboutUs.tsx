@@ -2,19 +2,7 @@
 // import { MdArrowOutward } from "react-icons/md";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-// import project1 from "../../public/Image/project1.png";
-// import project2 from "../../public/Image/project2.png"
-// import project3 from "../../public/Image/project3.png"
-// import project4 from "../../public/Image/project4.png"
-// import design1 from "../../public/Image/design1.png"
-// import design2 from "../../public/Image/design2.png"
-// import design3 from "../../public/Image/design3.png"
-// import design4 from "../../public/Image/deisign4.png"
 
-// import img1 from "../../public/Image/img1.jpg"
-// import img2 from "../../public/Image/img2.jpg"
-// import img3 from "../../public/Image/img4.jpg"
-// import img4 from "../../public/Image/img5.jpg"
 
 
 
